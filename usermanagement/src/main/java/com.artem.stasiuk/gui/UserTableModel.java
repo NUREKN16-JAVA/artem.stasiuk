@@ -7,14 +7,14 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 import com.artem.stasiuk.User;
-import com.artem.stasiuk.util.Messages;
+import com.artem.stasiuka.util.Messages;
 
 public class UserTableModel extends AbstractTableModel {
 
 	private static final String[] COLUMN_NAMES = { Messages.getString("UserTableModel.id"), //$NON-NLS-1$
 			Messages.getString("UserTableModel.first_name"), Messages.getString("UserTableModel.last_name") }; //$NON-NLS-1$ //$NON-NLS-2$
 	private static final Class<?>[] COLUMN_CLASSES = { Long.class, String.class, String.class };
-	private List users = null;
+	private List<User> users = null;
 
 	public UserTableModel(Collection users) {
 		this.users = new ArrayList(users);
@@ -53,5 +53,13 @@ public class UserTableModel extends AbstractTableModel {
 		}
 		return null;
 	}
-
+	
+	
+	public void addUsers(Collection<User> users) {
+		this.users.addAll(users);
+	}
+	
+	public void clearUsers() {
+		this.users = new ArrayList<>();
+	}
 }

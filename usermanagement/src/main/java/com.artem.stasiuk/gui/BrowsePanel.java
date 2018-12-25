@@ -18,7 +18,9 @@ import com.artem.stasiuk.util.Messages;
 
 public class BrowsePanel extends JPanel implements ActionListener {
 
-	
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	private MainFrame parent;
 	private JPanel buttonPanel;

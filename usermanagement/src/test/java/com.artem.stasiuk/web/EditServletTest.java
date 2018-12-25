@@ -46,7 +46,7 @@ public class EditServletTest extends MockServletTestCase {
 	public void testEditEmptyLastName() {
 		Date date = new Date();
 		addRequestParameter("id", "1000");
-		addRequestParameter("firstName", "Artem");
+		addRequestParameter("firstName", "Artyom");
 		addRequestParameter("dateOfBirth", DateFormat.getDateInstance().format(date));
 		addRequestParameter("okButton", "Ok");
 		doPost();
@@ -70,8 +70,8 @@ public class EditServletTest extends MockServletTestCase {
 	public void testEditEmptyDateIncorrect() {
 		Date date = new Date();
 		addRequestParameter("id", "1000");
-		addRequestParameter("firstName", "Artem");
-		addRequestParameter("lastName", "Stasiuk");
+		addRequestParameter("firstName", "Marina");
+		addRequestParameter("lastName", "Tretiakova");
 		addRequestParameter("dateOfBirth", "sda");
 		addRequestParameter("okButton", "Ok");
 		doPost();

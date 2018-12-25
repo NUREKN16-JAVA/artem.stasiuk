@@ -10,7 +10,7 @@ import org.dbunit.dataset.xml.XmlDataSet;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.marina.tretiakova.User;
+import com.artem.stasiuk.User;
 
 public class HsqldbUserDaoTest extends DatabaseTestCase {
 

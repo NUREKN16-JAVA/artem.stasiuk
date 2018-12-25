@@ -28,10 +28,10 @@ import junit.extensions.jfcunit.eventdata.JTableMouseEventData;
 import junit.extensions.jfcunit.eventdata.MouseEventData;
 import junit.extensions.jfcunit.eventdata.StringEventData;
 import junit.extensions.jfcunit.finder.NamedComponentFinder;
-import com.marina.tretiakova.User;
-import com.marina.tretiakova.db.DaoFactory;
-import com.marina.tretiakova.db.MockDaoFactory;
-import com.marina.tretiakova.util.Messages;
+import com.artem.stasiuk.User;
+import com.artem.stasiuk.db.DaoFactory;
+import com.artem.stasiuk.db.MockDaoFactory;
+import com.artem.stasiuk.util.Messages;
 
 public class MainFrameTest extends JFCTestCase {
 
@@ -54,7 +54,7 @@ public class MainFrameTest extends JFCTestCase {
 			setHelper(new JFCTestHelper());
 			String firstName = "Artem20";
 			String lastName = "Stasiuk20";
-			Date now = new Date(new Timestamp(2018, 12, 12, 0, 0, 0, 0).getTime());
+			Date now = new Date(new Timestamp(2018, 15, 12, 0, 0, 0, 0).getTime());
 			expectedUser = new User(20L, firstName, lastName, now);
 			user = new User(20L, firstName, lastName, now);
 			users = new ArrayList();
@@ -109,8 +109,8 @@ public class MainFrameTest extends JFCTestCase {
 	@Test
 	public void testAddUser() {
 		try {
-			String firstName = "Artem";
-			String lastName = "Stasiuk";
+			String firstName = "Marina";
+			String lastName = "Tretiakova";
 			Date now = new Date();
 
 			User user = new User(firstName, lastName, now);

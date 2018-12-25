@@ -45,7 +45,7 @@ public class AddServletTest extends MockServletTestCase {
 	@Test
 	public void testAddEmptyLastName() {
 		Date date = new Date();
-		addRequestParameter("firstName", "Artem");
+		addRequestParameter("firstName", "Stasiuk");
 		addRequestParameter("dateOfBirth", DateFormat.getDateInstance().format(date));
 		addRequestParameter("okButton", "Ok");
 		doPost();

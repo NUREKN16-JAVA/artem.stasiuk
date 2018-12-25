@@ -15,7 +15,6 @@ import com.artem.stasiuk.User;
 import com.artem.stasiuk.db.DaoFactory;
 import com.artem.stasiuk.db.DatabaseException;
 
-
 public class EditServlet extends HttpServlet {
 
 	/**
